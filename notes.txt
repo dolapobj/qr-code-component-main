@@ -1,0 +1,8 @@
+Time estimate: 6 hours? 
+
+Approach: 
+1. Larger Card 
+2. Then the blue inner card 
+3. Then the QR code 
+4. Then the heading 
+5. then the paragraph
