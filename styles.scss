@@ -1,6 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+$font-stack: "Outfit", sans-serif;
+$header-color: hsl(218, 44%, 22%);
+$text-color: hsl(220, 15%, 55%);
+$card-width: 300px;
+$card-height: $card-width * 1.6;
+$x: 10px; // Base spacing unit
+
+body {
+  font-family: $font-stack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+  margin: 0;
+}
 .card {
+  width: $card-width;
+  height: $card-height;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
   background-color: hsl(0, 0%, 100%);
+  padding: $x;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow:0 10px 12px rgba(0, 0, 0, 0.1);
 
   .qr-code {
+    width: 95%; // Makes the QR code half the width of the card
+    margin-top: $x; // Distance from the card to the QR code
+    margin-bottom: $x; // Distance from the QR code to the text
+    border-radius: 8px;
+  }
+  h1 {
+    font-weight: 700;
+    color: $header-color;
+    font-size: x-large;
+    margin-bottom: 20px; // Double the distance of the QR code's margin to separate the h1 and paragraph text
+  }
+
+  p {
+    font-weight: 400;
+    color: $text-color;
+    font-size: medium;
+    padding: 0 20px; // Adds horizontal padding
   }
 }
